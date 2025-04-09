@@ -1,6 +1,6 @@
 # Base image selection
-FROM docker.io/python:3.12.3
-#FROM docker.io/pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime
+# FROM docker.io/python:3.12.3
+FROM docker.io/pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime
 
 # Install essential utilities
 RUN apt-get update && apt-get install -y \
@@ -34,3 +34,5 @@ RUN chmod +x /app/start.sh
 
 # Default startup command
 CMD ["./start.sh"]
+
+# the pre-built image: docker.io/saladtechnologies/tailscale:0.0.1-basic-gpu
