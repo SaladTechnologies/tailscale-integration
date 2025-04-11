@@ -11,7 +11,7 @@ TAILSCALE_API_URL = f"https://api.tailscale.com/api/v2/tailnet/{TAILSCALE_ACCOUN
 TAILSCALE_API_URL_DEL = "https://api.tailscale.com/api/v2/device"
 
 # Set the threshold for inactivity (in minutes)
-INACTIVITY_THRESHOLD = 5  # 60 minutes
+INACTIVITY_THRESHOLD = 5  # 5 minutes
 
 # Headers to authenticate the API request
 headers = {

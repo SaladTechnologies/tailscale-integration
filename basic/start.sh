@@ -24,12 +24,12 @@ echo -e "\nTailscale IP for this device: $TAILSCALE_IP"
 # Optionally, you can filter specific variables to be saved 
 printenv > /etc/environment
 
-# Run the application 1 on port 8888
+# Run the application 1 on port 8888 with dual-stack support (IPv4 and IPv6)
 echo -e "\nRunning the Python code on port 8888..."
 python hello.py &
 
-# Run the application 2 on port 8889
-echo -e "\nRunning Jupyter Lab on port 8889..."
+# Run the application 2 on port 8889 with dual-stack support (IPv4 and IPv6)
+echo -e "\nRunning Jupyter Lab on port 8889 ..."
 jupyter lab --no-browser --port=8889  --ip=* --allow-root  --NotebookApp.token='' &
 
 # Keeping the script running indefinitely
